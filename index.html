@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro Odontologico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <!--NAVBAR-->
+
+    <header>
+      <nav class="navbar">
+          <ul class="navbar-menu">
+            <li> 
+            <a href="#"><img src="./img/logo.png" alt="logo" class="logo"/> 
+            </a>
+          </li>
+          <!--Links del navbar-->
+          <div class="container-items">
+                <li class="item"><a href="#">Sobre Nosotros</a></li>
+                <li class="item"><a href="#">Nuestros Servicios</a></li>
+                <li class="item"><a href="#">Contacto</a></li> 
+                </div>
+                
+                <!--menu bars-->
+                <div class="btn-container">
+                  <a href="#"><i class="fa-solid fa-bars" style="color: #a163f5;"></i></a>
+                </div>
+                <!--<div class="btn-carrito"><a href="#"><i class="fa-light fa-cart-shopping" style="color: #a163f5;"></i></a>
+                </div>-->
+              </ul>
+            </nav>
+    </header>
+
+     <!--PORTADA
+      <h1>Tu sonrisa blanca <br>y saludable</h1>
+      <button>Más información</button>
+      <div>
+      </section>-->
+
+      <main>
+      <section class="about-section" id="about">  
+        <div class="about-content">
+          <h1><span>Dental Studio</span>
+          <br>Consultorio Odontologico</h1> 
+          <p>Nuestro objetivo es brindarte una sonrisa radiante y saludable. Nos dedicamos a cuidar tu salud bucal y a realzar la belleza y estética de tu sonrisa. Con un enfoque en la calidad y la atención personalizada, trabajamos para que tus dientes luzcan blancos, saludables y llenos de confianza. En nuestro consultorio, encontrarás un equipo comprometido con tu bienestar dental y una experiencia de atención que te dejará con una sonrisa en el rostro en cada visita</p>
+         <a href="#" class="btn-hero">¡Quiero saber más!</a>
+        </div>
+        <div class="about-img">
+          <img src="./img/Dentista.png" alt="dentista"></div>
+    </section>
+  </main>
+
+    <!--Terminada la seccion-->
+
+
+    <!--PRODUCTOS seccion2>-->
+
+    <section id="nuestros-servicios">
+      <div class="container">
+      <h2>NUESTROS SERVICIOS</h2>
+    </div>
+    <div class="card-container">
+    <div class="card">
+      <img src="./img/arreglos.png">
+      <div class="card-content">
+      <h3>ARREGLOS</h3>
+      <p>Restaurar la funcionalidad y estética bucal desde la limpieza hasta la colocación de prótesis, todo con el objetivo de devolver la salud oral y la confianza al paciente.</p>
+      <span class="product-price">$1000</span>
+      <div class="btn-container">
+      <a href="#"class="btn">COMPRAR</a>
+    </div>
+  </div>
+</div>
+    <div class="card">
+      <img src="./img/limpieza.png">
+      <div class="card-content">
+      <h3>LIMPIEZA</h3>
+      <p>Elimina placa bacteriana y sarro, manteniendo una sonrisa saludable y previniendo enfermedades bucodentales, promoviendo una boca fresca y evitando caries y gingivitis</p>
+      <span class="product-price">$850</span>
+      <div class="btn-container"> 
+      <a href="#"class="btn" id="medio2">COMPRAR</a>
+    </div>
+  </div>
+</div>
+    <div class="card">
+      <img src="./img/blanqueamiento.png">
+      <div class="card-content">
+      <h3>BLANQUEAMIENTO</h3>
+      <p>Procedimiento que busca eliminar manchas y decoloraciones en los dientes, devolviendo una sonrisa más brillante y joven.</p>
+      <span class="product-price" id="producto3">$2500</span>
+      <span class=oferta>¡50% DE DESCUENTO!</span>
+      <div class="btn-container">
+        <a href="#" class="btn" id="medio">COMPRAR</a>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!--TERMINADO PRODUCTOS seccion2>-->
+
+     <!--CARRITO sección3>-->
+    <section class="cart-section" id="carrito">
+      <h2>CARRITO</h2>
+      <p>Hasta 3 cuotas sin interes</p>
+
+      <div class="cart-container">
+        <div class="cart-item">
+          <img src="./img/blanqueamiento.png" class="item-img"/>
+          <p class="cart-tittle">BLANQUEAMIENTO</p>
+          <span class="cart-price">$1250</span>
+        </div>
+        <div class="cart-item">
+          <img src="./img/limpieza.png" class="item-img"/>
+          <p class="cart-tittle">LIMPIEZA</p>
+          <span class="cart-price">$850</span>
+        </div>
+        <div class="cart-item">
+          <img src="./img/limpieza.png" class="item-img"/>
+          <p class="cart-tittle">LIMPIEZA</p>
+          <span class="cart-price">$850</span>
+        </div>
+
+        <div class="total-items">
+          <p class="total">TOTAL: $2950</p>
+          <a href="#" class="btn">FINALIZAR COMPRA</a>
+        </div>
+      </div>
+    </section>
+
+
+
+     <!--CARRITO sección3 terminado>-->
+
+
+          <!--CONTACTO>-->
+
+
+    <section id="contacto-section">
+      <h2 class="tittlecontact">¡Contáctanos!</h2>
+      <p class="pcontact">¿Listo para lucir una sonrisa radiante? Para agendar una consulta o para obtener más información sobre nuestros servicios, completa el siguiente formulario y te responderemos a la brevedad</p>
+      
+      
+      <div class="contact">
+
+        <form method="POST">
+
+          <label for="nombre">NOMBRE</label>
+          <input type="text" name="nombre" id="nombre" required>
+
+          <label for="email">CORREO ELECTRONICO</label>
+          <input type="email" name="email" id="email" required>
+
+          <label for="mensaje">MENSAJE</label>
+          <textarea name="mensaje" required></textarea>
+
+          <div class="form-txt">
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Terminos y condiciones</a>
+          </div>
+
+          <button type="Submit" class="btn3">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="footertittle">
+       <img src="./img/logo.png" alt="logo" class="logo">
+      </div>
+      <div class="contacto2">
+        <h2>CONTACTO</h2>
+        <a href="#">03 03 456</a>
+        <p>Avenida Siempre Viva 742</p>
+      </div>
+
+      <div class="legales">
+        <h2>TURNOS</h2>
+        <p>Te recordamos que también podes sacar turnos presenciales en nuestras oficinas</p>
+      </div>
+      <p>Hecho con 💜 Agustina</p>
+    </footer>
+  </body> 
+</html>
