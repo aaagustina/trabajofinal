@@ -116,7 +116,7 @@ main {
 
 .about-content h1 {
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 700;
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -131,9 +131,11 @@ main {
 .about-content p {
     margin: 1rem 0 1rem 0;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--negro);
     margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .btn-hero {
@@ -153,10 +155,11 @@ main {
     background-color: var(--secondary);
     color: var(--negro);
 } 
-
 .about-img {
     display: none;
-}   
+}  
+
+
 
 
     /*section1 ends*/
@@ -283,7 +286,7 @@ main {
 
 
 .cart-section {
-    background: #f3f3f3;
+
     padding: 4rem 0;
 }
 
@@ -307,7 +310,6 @@ main {
 }
 
 .cart-container {
-    background-color: white;
     width: 90%;
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -364,6 +366,7 @@ main {
 
 #contacto-section {
     padding: 4rem 0;
+    background-color: ;
 }
 
 
@@ -371,6 +374,7 @@ form {
     background-color: rgba(213, 183, 255, 0.7);
     width: 90%;
     margin: 0 auto;
+    margin-top: 30px;
     padding: 2rem 1rem;
     border-radius: 1rem;
     color: var(--btn);
@@ -379,8 +383,16 @@ form {
     display: flex;
     flex-direction: column;
     text-align: left;
-}
 
+}
+.botones {
+    margin-left: 100px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+   } 
 
 .tittlecontact {
     color:var(--clarito);
@@ -409,7 +421,7 @@ input, textarea {
     margin-bottom: 20px;
     background-color: rgba(250, 227, 255, 0.7);
     border: 2px solid var(--secondary);
-    color: var(--clarito);
+    color: var(--gris);
     outline: none;
 }
 
@@ -442,6 +454,10 @@ button{
 }
 
 
+/*CARRITO ENDS*/
+
+/*FOOTER*/
+
 
 footer {
     display: flex;
@@ -461,9 +477,12 @@ footer p {
     font-weight: 300;
 }
 
-footer .footertittle {
-    width: 60%;
+.footertittle {
+    height: auto;
+    width: 200px;
     margin-bottom: 0.2rem;
+    background-color: #000000;
+    overflow: hidden;
 }
 
 .contacto2 {
@@ -478,3 +497,159 @@ footer .footertittle {
 .legales {
     max-width: 280px;
 }
+.loguito {
+    display: none;
+}
+
+
+
+/*MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+
+    .navbar-menu {
+        flex-wrap: nowrap;
+
+   
+        height: 150px;
+    }
+    .container-items {
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+    }
+  .item {
+    display: flex;
+  }
+  .btn-container {
+    display: none;
+  }
+
+  /*Section 1*/
+  
+
+  #about {
+    flex-direction: row;
+  }
+  .about-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 70%;
+  
+  }
+  .about-content p {
+    text-align: left;
+    max-width: 700px;
+  }
+
+  .about-img {
+    max-width: 1000px;
+    margin: 0;
+    margin-right:30px;
+    display: flex;
+  }
+
+  .dentista {
+    border-radius: 20px;
+  }  
+
+    /*CARRITO*/
+    .cart-section p {
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+
+    .cart-container {
+        max-width: 700px;
+    }
+    /*CONTACTO*/
+    
+    #contacto-section {
+       display: flex;
+       align-items: flex-start;
+      justify-content: center;
+      margin-left: 100px;
+      
+
+     
+       }
+       .contact-info {
+         justify-content: flex-start;
+         align-items: flex-start;
+         max-width: 40%;
+       }
+        .tittlecontact {
+         text-align: center;
+         max-width: 700px;
+         font-size: 3rem;
+         
+        }
+       .pcontact {
+         text-align:left;
+         max-width: 700px;
+         margin-left: 30px;
+         font-size: 18px;
+         
+       }
+     
+     
+
+         form{
+            max-width: 400px;
+            margin-left: auto;
+            position: relative;
+            z-index: 2;
+           }
+
+           .botones {
+            margin-left: 100px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+           } 
+
+
+           
+    /*FOOTER*/
+           
+           .footer {
+            position: relative;
+            display: flex;
+            align-items: center;
+           justify-content: space-between;
+            padding: 20px;
+            max-width: 50%;
+           }
+           
+           .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            width: 100%;
+           }
+          
+
+           .contacto2, .legales {
+            flex: 1;
+           }
+
+           .contacto2 h2, .legales h2 {
+            margin-bottom: 10px;
+           }
+
+           .footer-info {
+            text-align: center;
+           }
+           
+           .pfooter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+           }
+
+      
+           
+         }
